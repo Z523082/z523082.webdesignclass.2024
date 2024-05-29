@@ -1,35 +1,161 @@
 <!DOCTYPE html>
 <html>
+   
 <head>
 <meta charset="UTF-8">   
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>My Portfolio</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
 @import url(styles.css); 
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&display=swap');
 </style>
 </head>
 
+
 <body>
-<div id="container"> 
+    <a id="top"></a><!-- Top of the page-->
+
+    <div class="popup-menu" id="popup">
+        <a href="" class="close-popup">&times;</a>
+        <br>
+        <div class="popup-content">
+            <ul>
+                <li><a href="index.html#group1">Home</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a id="about" href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
 <header>
-    <nav id="menu">
-        <ul>
-            <li><a href="">My work</a></li>
-            <li><a href="">About me</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
-    </nav>
+    <a href="index.html#group1" class="logo">JULIE HELENE ØWRE</a>
+    <a href="index.html#group1" class="logo-small">JHØ.</a><!--logo for smaller screen-->
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html#group1">Home</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a id="about" href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    
+    <!--hamburger menu for smaller screen, (using the unicode char for the hamburger icon)-->
+    <div class="button-div"></div>
+        <a href="#popup" class="hamburger" aria-label="Open nav-menu">&#9776;</a>
+    </div>
 </header>
 
-<main id="info">
+
+    <div class="container"> <!--Container for arranging the content under the header-->
+<!------------------sidebar----------------------------------------------------------->
+        <nav class="sidebar"> 
+            <div class="profile">
+                <img src="" alt="Profile Picture" class="profile-pic">
+                
+                <h3>Industrial Design Student</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+
+            <nav class="socials"><!--social links-->
+                <ul>
+                    <li><a href="mailto:juliehelene@gmail.com" class="social">
+                    <img src="icons/mail.png" alt="icon">Email</a></li>
+    
+                    <li><a href="https://www.linkedin.com/in/julie-helene-øwre-82555822a" class="social">
+                    <img src="icons/linkedin.png" alt="icon">Linkedin</a></li>
+                    
+                    <li><a href="https://www.instagram.com/julieowre" class="social">
+                    <img src="icons/insta.png" alt="icon">Instagram</a></li>
+                </ul>
+            </nav>
+            
+            
+        </nav>
+<!------------------------------------------------------------------------------------>
+
+<main>
+<section class="container2">
+    <div class="slider-wrap">
+        <div class="slider">
+            <div id="group1" class="slide-group">
+                <video controls><source id="slide1" src="images/tempe.mp4" type="video/mp4" alt="project1" class="slide">Your browser does not support the video tag.</video>
+                <div id="desc1" class="description">
+                    <h1>Project 1</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+            <div id="group2" class="slide-group">
+                <img id="slide2" src="images/chess3.jpg" alt="project2" class="slide">
+                <div id="desc2" class="description">
+                    <h1>Project 2</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+            <div id="group3" class="slide-group">
+                <img id="slide3" src="images/boxes.png" alt="project3" class="slide">
+                <div id="desc3" class="description">
+                    <h1>Project 3</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+            <div id="group4" class="slide-group">
+                <img id="slide4" src="images/bryter-explode.162.png" alt="project4" class="slide">
+                <div id="desc4" class="description">
+                    <h1>Project 4</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+        
+            <div class="slider-nav">
+                <a href="#group1" class="dot"></a>
+                <a href="#group2" class="dot"></a>
+                <a href="#group3" class="dot"></a>
+                <a href="#group4" class="dot"></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<a href="#top" class="scrollToTop" aria-label="Scroll to top">&#xFFEA;</a>
 
 </main>
+</div>
 
+</body>
 <footer>
     <p>Content copyright &copy; 2024, Julie Helene Øwre</p>
 </footer>
 
-</div>
-</body>
 </html>

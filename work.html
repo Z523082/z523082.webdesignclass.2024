@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+   
+<head>
+<meta charset="UTF-8">   
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<style>
+@import url(styles.css); 
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&display=swap');
+</style>
+</head>
+
+
+<body>
+    <a id="top"></a><!-- Top of the page-->
+
+    <div class="popup-menu" id="popup">
+        <a href="" class="close-popup">&times;</a>
+        <br>
+        <div class="popup-content">
+            <ul>
+                <li><a href="index.html#group1">Home</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+<header>
+    <a href="index.html#group1" class="logo">JULIE HELENE ØWRE</a>
+    <a href="mindex.html#group1" class="logo-small">JHØ.</a><!--logo for smaller screen-->
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html#group1">Home</a></li>
+                <li><a class="work" href="work.html">Work</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    
+    <!--hamburger menu for smaller screen, (using the unicode char for the hamburger icon)-->
+    <div class="button-div"></div>
+        <a href="#popup" class="hamburger" aria-label="Open nav-menu">&#9776;</a>
+    </div>
+</header>
+
+
+    <div class="container"> <!--Container for arranging the content under the header-->
+<!------------------sidebar----------------------------------------------------------->
+        <nav class="sidebar"> 
+            <div class="profile">
+                <img src="" alt="Profile Picture" class="profile-pic">
+                
+                <h3>Industrial Design Student</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+
+            <nav class="socials"><!--social links-->
+                <ul>
+                    <li><a href="mailto:juliehelene@gmail.com" class="social">
+                    <img src="icons/mail.png" alt="icon">Email</a></li>
+    
+                    <li><a href="https://www.linkedin.com/in/julie-helene-øwre-82555822a" class="social">
+                    <img src="icons/linkedin.png" alt="icon">Linkedin</a></li>
+                    
+                    <li><a href="https://www.instagram.com/julieowre" class="social">
+                    <img src="icons/insta.png" alt="icon">Instagram</a></li>
+                </ul>
+            </nav>
+        
+        </nav>
+<!------------------------------------------------------------------------------------>
+
+<main>
+<section class="workGrid">
+    <div class="row"> 
+        <div class="column">
+            <div class="image-container">
+                <img src="images/lumion.jpg" alt="project1" class="image">
+                <div class="overlay">
+                  <div class="title">Project 1</div>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="images/osaka.jpg" alt="project5" class="image">
+                <div class="overlay">
+                  <div class="title">Project 4</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="image-container">
+                <img src="images/speaker.jpg" alt="project6" class="image">
+                <div class="overlay">
+                  <div class="title">Project 4</div>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="images/chess2.png" alt="project2" class="image">
+                <div class="overlay">
+                  <div class="title">Project 2</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="image-container">
+                <img src="images/bryter-explode.162.png" alt="project4" class="image">
+                <div class="overlay">
+                  <div class="title">Project 2</div>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="images/estetikk.png" alt="project7" class="image">
+                <div class="overlay">
+                  <div class="title">Project 2</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<a href="#top" class="scrollToTop" aria-label="Scroll to top">&#xFFEA;</a>
+
+</main>
+</div>
+
+</body>
+<footer>
+    <p>Content copyright &copy; 2024, Julie Helene Øwre</p>
+</footer>
+
+</html>
